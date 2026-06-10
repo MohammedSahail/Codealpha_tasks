@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+}
+
+.calculator{
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:25px;
+    border-radius:25px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+#display{
+    width:100%;
+    height:80px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    margin-bottom:20px;
+    text-align:right;
+    font-size:2rem;
+    padding:15px;
+    background:rgba(255,255,255,0.1);
+    color:white;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,80px);
+    gap:15px;
+}
+
+button{
+    height:70px;
+    border:none;
+    border-radius:15px;
+    font-size:1.3rem;
+    cursor:pointer;
+    background:rgba(255,255,255,0.12);
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,0.2);
+}
+
+.operator{
+    background:#f59e0b;
+}
+
+.equal{
+    background:#22c55e;
+    grid-column:span 2;
+}
